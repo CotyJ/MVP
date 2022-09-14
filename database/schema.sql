@@ -47,10 +47,34 @@ CREATE TABLE characters(
   -- for now text
 --  ancestry INTEGER,
  ancestry VARCHAR(20),
+ background VARCHAR(20),
 
---  skills is an array, how to incorporate?
+ level INTEGER,
 
- level INTEGER
+ -- Saving Throws
+ fortitude INTEGER,
+ reflex INTEGER,
+ will INTEGER,
+
+-- Ability Scores
+strength INTEGER,
+dexterity INTEGER,
+constitution INTEGER,
+intelligence INTEGER,
+wisdom INTEGER,
+charisma INTEGER,
+
+perception INTEGER,
+
+classdc INTEGER,
+
+-- Recall Knowledge Skill Scores
+arcana INTEGER,
+crafting INTEGER,
+nature INTEGER,
+occultism INTEGER,
+religion INTEGER,
+society INTEGER
 
 --  photo text
 
@@ -59,24 +83,42 @@ CREATE TABLE characters(
 -- ALTER TABLE characters ADD FOREIGN KEY (class) REFERENCES classes(id);
 -- ALTER TABLE characters ADD FOREIGN KEY (ancestry) REFERENCES ancestries(id);
 
+-- My Character
+INSERT INTO characters(
+  name, class, ancestry, background, level,
+  fortitude, reflex, will,
+  strength, dexterity, constitution, intelligence, wisdom, charisma,
+  perception, classdc,
+  arcana, crafting, nature, occultism, religion, society)
+VALUES(
+  'Kaiper', 'Summoner', 'Kitsune', 'Duskwalker', 4,
+  11, 7, 8,
+  10, 12, 16, 12, 10, 18,
+  8, 20,
+  1, 1, 6, 9, 6, 1
+  );
+
+
 -- Main NEW WITHOUT PHOTOS
-INSERT INTO characters(name, class, ancestry, level)
-VALUES('Aragorn', 'Ranger', 'Human', 12);
+-- INSERT INTO characters(name, class, ancestry, level)
+-- VALUES('Aragorn', 'Ranger', 'Human', 12);
 
-INSERT INTO characters(name, class, ancestry, level)
-VALUES('Elrond', 'Paladin', 'Elf', 19);
+-- INSERT INTO characters(name, class, ancestry, level)
+-- VALUES('Elrond', 'Paladin', 'Elf', 19);
 
-INSERT INTO characters(name, class, ancestry, level)
-VALUES('Legolas', 'Archer', 'Elf', 11);
+-- INSERT INTO characters(name, class, ancestry, level)
+-- VALUES('Legolas', 'Archer', 'Elf', 11);
 
-INSERT INTO characters(name, class, ancestry, level)
-VALUES('Gimli', 'Fighter', 'Dwarf', 11);
+-- INSERT INTO characters(name, class, ancestry, level)
+-- VALUES('Gimli', 'Fighter', 'Dwarf', 11);
 
-INSERT INTO characters(name, class, ancestry, level)
-VALUES('Boromir', 'Fighter', 'Death', 10);
+-- INSERT INTO characters(name, class, ancestry, level)
+-- VALUES('Boromir', 'Fighter', 'Death', 10);
 
-INSERT INTO characters(name, class, ancestry, level)
-VALUES('Gandalf', 'Wizard', 'Maia', 20);
+-- INSERT INTO characters(name, class, ancestry, level)
+-- VALUES('Gandalf', 'Wizard', 'Maia', 20);
+
+
 
 -- Fillers
 -- INSERT INTO characters(name, class, ancestry, level)
