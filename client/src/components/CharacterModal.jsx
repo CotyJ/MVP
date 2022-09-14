@@ -36,16 +36,37 @@ class CharacterModal extends Component {
 
             <div className="character-modal-background">
               <div className="character-modal">
-                <h2>{this.props.character.name}</h2>
-                <div>{`Level ${this.props.character.level}`}</div>
-                <div>{`Ancestry: ${this.props.character.ancestry}`}</div>
-                <div>{`Class: ${this.props.character.class}`}</div>
-                <br />
-                <div> Skills Coming Soon! </div>
+                {/* <h2>{this.props.character.name}</h2> */}
+                <h1>{`${this.props.character.name}, Level ${this.props.character.level} ${this.props.character.ancestry} ${this.props.character.class} (${this.props.character.background})`}</h1>
+
+                <h2>{ `Perception: ${this.props.character.perception}` }</h2>
+
+                <h3>Saving Throws</h3>
+                <div>{ `Fortitude: ${this.props.character.fortitude}` }</div>
+                <div>{ `Reflex: ${this.props.character.reflex}` }</div>
+                <div>{ `Will: ${this.props.character.will}` }</div>
+
+                <h3>Ability Scores</h3>
+                <div>{ `Strength: ${this.props.character.strength}` }</div>
+                <div>{ `Dexterity: ${this.props.character.dexterity}` }</div>
+                <div>{ `Constitution: ${this.props.character.constitution}` }</div>
+                <div>{ `Intelligence: ${this.props.character.intelligence}` }</div>
+                <div>{ `Wisdom: ${this.props.character.wisdom}` }</div>
+                <div>{ `Charisma: ${this.props.character.charisma}` }</div>
+
+                <h3>Recall Knowledge Skills</h3>
+                <div>{`Arcana: ${this.props.character.arcana}`}</div>
+                <div>{`Crafting: ${this.props.character.crafting}`}</div>
+                <div>{`Nature: ${this.props.character.nature}`}</div>
+                <div>{`Religion: ${this.props.character.religion}`}</div>
+                <div>{`Occultism: ${this.props.character.occultism}`}</div>
+                <div>{`Society: ${this.props.character.society}`}</div>
+
+                {/* <div> Skills Coming Soon! </div>
                 <div> Feats Coming Soon! </div>
                 <div> Equipment Coming Soon! </div>
-                <div> Spells Coming Soon! </div>
-                <br />
+                <div> Spells Coming Soon! </div> */}
+
                 <button
                   onClick={this.onCloseModal}
                   onClose={() => this.onCloseModal}
