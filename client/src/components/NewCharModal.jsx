@@ -100,6 +100,13 @@ class NewCharModal extends Component {
                   </select>
                 </div>
 
+
+
+                <div>To Add...</div>
+                <div>Add Ability Scores (Auto Calc Modifier)</div>
+                <div></div>
+
+
                 <button
                   onClick={() => {
                     this.onCloseModal;
@@ -121,6 +128,9 @@ class NewCharModal extends Component {
           </div>
           : ''
         }
+
+        <button className="character-create-button"> Upload Character </button>
+
       </div>
     )
   }

@@ -1,48 +1,31 @@
 # Pathfinder PC Tracker #
 
-## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
-
 ## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+To help Dungeon Masters see Player Character stats without having to ask for them.
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
-  This app will allow a DM to easily and quickly find existing characters or create new ones.
+This small app is used to find player characters and see their stats for the Pathfinder Roleplaying Game (2nd Edition)
 
 ## Problem ##
-  > Describe the problem your product solves.
-  The problem of not having easy access to multiple characters' stats and information.
+While playing Pathfinder, our DM constantly has to ask us what some of our modifiers are to make secret checks for us. I made this app so they would have the ability to just check those scores without clueing us in.
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
-  By making everything available on one page and no more than a few clicks away. Easy to open, easy to close character cards facilitate this.
+A gallery of players visible to the user so that the player information is just one click away.
 
-## Quote from You ##
-  > A quote from a spokesperson in your company.
-  Wow. I can't believe nobody has done this before!
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
   See the readMe! Here are the first steps!
 
-  To get started navigate into myValuableProject in your terminal and execute the command:
-  npm install
+  To get started navigate into MVP in your terminal and execute the command:
+
+    npm install
 
   To see the website running on a localhost port right away, try:
-  npm run build
-  npm run start-server
+
+    npm run build
+    npm run start-server
 
 
-## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
-  I got so tired of asking my PC's for their stats on some rolls I had to make, and by asking, they knew to expect something.
-  I either had to fake roll or ask unnecessarily to cover for this. But now I can easily get to that information on my device!
-
-
-## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
-  Check out the readMe first! It gives instructions on how to install, run the app, and talks about some future features that are coming!
 
 <br>
 </br>

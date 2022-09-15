@@ -60,12 +60,10 @@ class App extends React.Component {
         <SearchFilter
           addCharacter={this.addCharacter}
           handleSearchSubmit={this.handleSearchSubmit.bind(this)}
-
         />
 
         <Gallery
           characters={this.state.characterSearch.length > 0 ? this.state.characterSearch : this.state.characters}
-
         />
 
       </div>
