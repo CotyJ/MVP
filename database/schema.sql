@@ -43,8 +43,7 @@ CREATE TABLE characters(
 --  class INTEGER,
  class VARCHAR(20),
 
- -- pull ancestry from ancestries with ancestry id
-  -- for now text
+ -- pull ancestry from ancestries with ancestry id (later), for now text
 --  ancestry INTEGER,
  ancestry VARCHAR(20),
  background VARCHAR(20),
