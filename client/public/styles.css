@@ -1,5 +1,6 @@
 html {
-/* background: #131516; */
+  background: #242930;
+  color: #fff;
 }
 
 /*
@@ -47,12 +48,20 @@ h2 {
 #SearchFilter {
   float: left;
   /* display: inline-block; */
-  min-width: 20%;
+  min-width: 15%;
   min-height: 360px;
+  width: 212px;
   height: 90%;
   /* border: 2px solid blue; */
   padding: 10px;
   margin: 10px;
+
+  border: 2px solid white;
+  border-radius: 18px;
+  background-color: #28323f;
+  background-image: -webkit-linear-gradient(#28323f 0%, #3e5169 60%);
+  background-image: linear-gradient(#28323f 0%, #3e5169 60%);
+
 }
 
 #Gallery {
@@ -60,7 +69,7 @@ h2 {
   /* display: inline-block; */
   width: fit-content;
   min-width: 40%;
-  min-height: 400px;
+  min-height: 500px;
   max-width: 60%;
   max-height: 600px;
   height: 90%;
@@ -68,6 +77,11 @@ h2 {
   padding: 10px;
   margin: 10px;
   overflow: auto;
+  border: 2px solid white;
+  border-radius: 18px;
+  background-color: #28323f;
+  background-image: -webkit-linear-gradient(#28323f 0%, #3e5169 60%);
+  background-image: linear-gradient(#28323f 0%, #3e5169 60%);
 }
 
 
@@ -86,18 +100,26 @@ h2 {
   float: left;
   padding: 8px;
   margin: 12px;
-  /* min-height: 160px; */
+  /* height: 120px; */
+  background-color: #28323f;
+  background-image: -webkit-linear-gradient(#28323f 0%, #3e5169 60%);
+  background-image: linear-gradient(#28323f 0%, #3e5169 60%);
   min-width: 200px;
-  box-shadow: 3px 3px 3px;
-  background-color: gray;
-  border-radius: 6px;
+  /* box-shadow: 3px 3px 3px; */
+  border: 2px solid white;
+  border-radius: 18px;
   width: 200px;
   /* width: 24%; */
 }
 
 .character-card:hover {
+  margin: 10px;
+
   border: 2px white;
-  background-color: rgb(190, 190, 190);
+  background-color: #3e5e86;
+  background-image: -webkit-linear-gradient(#3e5169 00%, #28323f 60%);
+  background-image: linear-gradient(#3e5169 00%, #28323f 60%);
+  border: 4px solid white;
 }
 
 .class-thumb {
@@ -111,7 +133,7 @@ h2 {
   width: 100%;
   z-index: 2;
   position: absolute;
-  background-color: whitesmoke;
+  background-color: #28323f;
   /* opacity: .8; */
   left: 0;
   top: 0;
@@ -123,10 +145,10 @@ h2 {
   top: 20%;
   left: 25%;
   z-index: 300;
-  background-color: rgb(255, 255, 255);
+  background-color: #28323f;
   --darkreader-inline-bgcolor: #21211e;
   border: 2px solid black;
-  border-radius: 5px;
+  border-radius: 18px;
   padding: 10px;
   align-self: center;
   width: 40%;
@@ -134,6 +156,9 @@ h2 {
   height: fit-content;
   line-height: 1.5;
   font-weight: bold;
+  background: #171a1e;
+  border: 2px solid white;
+
 }
 
 
@@ -162,11 +187,19 @@ h2 {
 }
 
 .character-name-on-card {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.character-description-modal{
+.character-description {
+  font-size: 18px;
+}
+
+.character-description-modal {
   text-align: center;
 }
 
@@ -178,6 +211,7 @@ h2 {
   /* height: 36px; */
   margin-top: 12px;
   border: 2px solid white;
+  border-radius: 3px;
   min-width: 100%;
 }
 
@@ -199,7 +233,8 @@ h2 {
   width: 200px;
   /* height: 36px; */
   margin-top: 12px;
-  border: 2px solid white;
+  border: 3px solid white;
+  border-radius: 3px;
 }
 
 .app-background {
@@ -237,20 +272,21 @@ h2 {
   justify-items: center;
   align-items: center;
   text-align: center;
-  border: 2px solid black;
+  border: 2px solid white;
 }
 
 .attribute-text {
   justify-items: left;
   align-items: left;
   margin: left auto;
+  color: white;
 }
 
 .attribute-number-2 {
   justify-items: center;
   align-items: center;
   text-align: center;
-  border: 2px solid black;
+  border: 2px solid white;
 }
 
 /* .modal-trait {
