@@ -97,6 +97,7 @@ VALUES(
   );
 
 
+
 -- Main NEW WITHOUT PHOTOS
 -- INSERT INTO characters(name, class, ancestry, level)
 -- VALUES('Aragorn', 'Ranger', 'Human', 12);

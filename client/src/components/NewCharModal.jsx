@@ -16,23 +16,23 @@ class NewCharModal extends Component {
       chosenBac: '',
       chosenCla: '',
       chosenLvl: 0,
-      setPerception: 0,
+      setPerception: null,
       setDC: 0,
       setFort: 0,
       setRef: 0,
       setWill: 0,
-      setStr: 0,
-      setDex: 0,
-      setCon: 0,
-      setInt: 0,
-      setWis: 0,
-      setCha: 0,
-      setArcana: 0,
-      setCrafting: 0,
-      setNature: 0,
-      setReligion: 0,
-      setOccultism: 0,
-      setSociety: 0,
+      setStr: 10,
+      setDex: 10,
+      setCon: 10,
+      setInt: 10,
+      setWis: 10,
+      setCha: 10,
+      setArcana: 10,
+      setCrafting: 10,
+      setNature: 10,
+      setReligion: 10,
+      setOccultism: 10,
+      setSociety: 10,
     }
     this.handleChange = this.handleChange.bind(this);
   }
@@ -121,13 +121,13 @@ class NewCharModal extends Component {
 
                 <div className="filter-refiner">
                   <div> Perception: {this.state.setPerception} </div>
-                  <input type="range" id="setPerception" min="10" max="30" className="dropdown-filter" onChange={this.handleChange}>
+                  <input type="range" id="setPerception" min="0" max="20" className="dropdown-filter" onChange={this.handleChange}>
                   </input>
                 </div>
 
                 <div className="filter-refiner">
                   <div> Class DC: {this.state.setDC} </div>
-                  <input type="range" id="setDC" min="10" max="30" className="dropdown-filter" onChange={this.handleChange}>
+                  <input type="range" id="setDC" defaultValue="0" min="10" max="30" className="dropdown-filter" onChange={this.handleChange}>
                   </input>
                 </div>
 
@@ -135,19 +135,19 @@ class NewCharModal extends Component {
 
                 <div className="filter-refiner">
                   <div> Fortitude: {this.state.setFort} </div>
-                  <input type="range" id="setFort" min="10" max="30" className="dropdown-filter" onChange={this.handleChange}>
+                  <input type="range" id="setFort" defaultValue="0" min="0" max="20" className="dropdown-filter" onChange={this.handleChange}>
                   </input>
                 </div>
 
                 <div className="filter-refiner">
                   <div> Reflex: {this.state.setRef} </div>
-                  <input type="range" id="setRef" min="10" max="30" className="dropdown-filter" onChange={this.handleChange}>
+                  <input type="range" id="setRef" defaultValue="0" min="0" max="20" className="dropdown-filter" onChange={this.handleChange}>
                   </input>
                 </div>
 
                 <div className="filter-refiner">
                   <div> Will: {this.state.setWill} </div>
-                  <input type="range" id="setWill" min="10" max="30" className="dropdown-filter" onChange={this.handleChange}>
+                  <input type="range" id="setWill" defaultValue="0" min="0" max="20" className="dropdown-filter" onChange={this.handleChange}>
                   </input>
                 </div>
 
@@ -155,38 +155,38 @@ class NewCharModal extends Component {
 
                 <div className="filter-refiner">
                   <div> Strength: {this.state.setStr} </div>
-                  <input type="range" id="setStr" min="10" max="30" className="dropdown-filter" onChange={this.handleChange}>
+                  <input type="range" id="setStr" defaultValue="10" min="10" max="30" className="dropdown-filter" onChange={this.handleChange}>
                   </input>
                 </div>
 
 
                 <div className="filter-refiner">
                   <div> Dexterity: {this.state.setDex} </div>
-                  <input type="range" id="setDex" min="10" max="30" className="dropdown-filter" onChange={this.handleChange}>
+                  <input type="range" id="setDex" defaultValue="10" min="10" max="30" className="dropdown-filter" onChange={this.handleChange}>
                   </input>
                 </div>
 
                 <div className="filter-refiner">
                   <div> Constitution: {this.state.setCon} </div>
-                  <input type="range" id="setCon" min="10" max="30" className="dropdown-filter" onChange={this.handleChange}>
+                  <input type="range" id="setCon" defaultValue="10" min="10" max="30" className="dropdown-filter" onChange={this.handleChange}>
                   </input>
                 </div>
 
                 <div className="filter-refiner">
                   <div> Intelligence: {this.state.setInt} </div>
-                  <input type="range" id="setInt" min="10" max="30" className="dropdown-filter" onChange={this.handleChange}>
+                  <input type="range" id="setInt" defaultValue="10" min="10" max="30" className="dropdown-filter" onChange={this.handleChange}>
                   </input>
                 </div>
 
                 <div className="filter-refiner">
                   <div> Wisdom: {this.state.setWis} </div>
-                  <input type="range" id="setWis" min="10" max="30" className="dropdown-filter" onChange={this.handleChange}>
+                  <input type="range" id="setWis" defaultValue="10" min="10" max="30" className="dropdown-filter" onChange={this.handleChange}>
                   </input>
                 </div>
 
                 <div className="filter-refiner">
                   <div> Charisma: {this.state.setCha} </div>
-                  <input type="range" id="setCha" min="10" max="30" className="dropdown-filter" onChange={this.handleChange}>
+                  <input type="range" id="setCha" defaultValue="10" min="10" max="30" className="dropdown-filter" onChange={this.handleChange}>
                   </input>
                 </div>
 
@@ -194,37 +194,37 @@ class NewCharModal extends Component {
 
                 <div className="filter-refiner">
                   <div> Arcana: {this.state.setArcana} </div>
-                  <input type="range" id="setArcana" min="10" max="30" className="dropdown-filter" onChange={this.handleChange}>
+                  <input type="range" id="setArcana" defaultValue="10" min="0" max="30" className="dropdown-filter" onChange={this.handleChange}>
                   </input>
                 </div>
 
                 <div className="filter-refiner">
                   <div> Crafting {this.state.setCrafting} </div>
-                  <input type="range" id="setCrafting" min="10" max="30" className="dropdown-filter" onChange={this.handleChange}>
+                  <input type="range" id="setCrafting" defaultValue="10" min="0" max="30" className="dropdown-filter" onChange={this.handleChange}>
                   </input>
                 </div>
 
                 <div className="filter-refiner">
                   <div> Nature: {this.state.setNature} </div>
-                  <input type="range" id="setNature" min="10" max="30" className="dropdown-filter" onChange={this.handleChange}>
+                  <input type="range" id="setNature" defaultValue="10" min="0" max="30" className="dropdown-filter" onChange={this.handleChange}>
                   </input>
                 </div>
 
                 <div className="filter-refiner">
                   <div> Religion: {this.state.setReligion} </div>
-                  <input type="range" id="setReligion" min="10" max="30" className="dropdown-filter" onChange={this.handleChange}>
+                  <input type="range" id="setReligion" defaultValue="10" min="0" max="30" className="dropdown-filter" onChange={this.handleChange}>
                   </input>
                 </div>
 
                 <div className="filter-refiner">
                   <div> Occultism: {this.state.setOccultism} </div>
-                  <input type="range" id="setOccultism" min="10" max="30" className="dropdown-filter" onChange={this.handleChange}>
+                  <input type="range" id="setOccultism" defaultValue="10" min="0" max="30" className="dropdown-filter" onChange={this.handleChange}>
                   </input>
                 </div>
 
                 <div className="filter-refiner">
                   <div> Society: {this.state.setSociety} </div>
-                  <input type="range" id="setSociety" min="10" max="30" className="dropdown-filter" onChange={this.handleChange}>
+                  <input type="range" id="setSociety" defaultValue="10" min="0" max="30" className="dropdown-filter" onChange={this.handleChange}>
                   </input>
                 </div>
 

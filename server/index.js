@@ -10,6 +10,8 @@ app.use(morgan("tiny"));
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '../client/public')));
 
+
+
 // GET ALL characters
 app.get('/api/v1/characters', async (req, res) => {
   await db.query("SELECT * FROM characters order by name;")
@@ -19,6 +21,8 @@ app.get('/api/v1/characters', async (req, res) => {
     .catch((err) => console.log("ERROR", err));
 })
 
+
+
 // GET ONE character
 app.get('/api/v1/characters/:id', async (req, res) => {
   const result = await db.query(
@@ -27,6 +31,8 @@ app.get('/api/v1/characters/:id', async (req, res) => {
   res.status(200).json(result.rows[0])
   console.log(result.rows[0]);
 })
+
+
 
 // POST a character
 app.post('/api/v1/characters', async (req, res) => {
@@ -94,7 +100,7 @@ app.post('/api/v1/characters', async (req, res) => {
 
 
 
-// UPDATE a character
+// UPDATE a character (Needs new params)
 app.put('/api/v1/characters/:id', async (req, res) => {
   const result = await db.query(
     `UPDATE characters SET name=$1, class=$2, ancestry=$3, level=$4 where id=$5 returning *`,
@@ -104,6 +110,8 @@ app.put('/api/v1/characters/:id', async (req, res) => {
   res.status(200).json(result.rows[0]);
 })
 
+
+
 // DELETE a character
 app.delete('/api/v1/characters/:id', async (req, res) => {
   await db.query(
@@ -112,6 +120,8 @@ app.delete('/api/v1/characters/:id', async (req, res) => {
     .then(res.sendStatus(204))
     .catch((err) => console.log(err));
 })
+
+
 
 app.listen(port, () => {
   console.log(`-----Listening on port ${port}-----`)
