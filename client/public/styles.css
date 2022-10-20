@@ -135,18 +135,13 @@ h2 {
   z-index: 2;
   position: absolute;
   background: #171a1e;
-
-  /* opacity: .8; */
   left: 0;
   top: 0;
 }
 
 .character-modal {
-  /* position: fixed; */
   --darkreader-inline-bgcolor: #21211e;
-  /* opacity: 1; */
   background-color: #28323f;
-  /* border: 2px solid black; */
   top: 20%;
   left: 25%;
   border-radius: 18px;
@@ -164,7 +159,27 @@ h2 {
   line-height: 1.5;
   overflow-y: auto;
   z-index: 300;
+}
 
+.character-modal-2 {
+  --darkreader-inline-bgcolor: #21211e;
+  background-color: #28323f;
+  top: 20%;
+  left: 25%;
+  border-radius: 18px;
+  padding: 10px;
+  align-self: center;
+  width: fit-content;
+  height: fit-content;
+  border: 2px solid white;
+  background: #171a1e;
+  background-color: #28323f;
+  background-image: -webkit-linear-gradient(#28323f 0%, #3e5169 60%);
+  background-image: linear-gradient(#28323f 0%, #3e5169 60%);
+  font-weight: bold;
+  line-height: 1.5;
+  overflow-y: auto;
+  z-index: 300;
 }
 
 
