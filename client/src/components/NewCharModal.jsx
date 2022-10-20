@@ -44,7 +44,7 @@ class NewCharModal extends Component {
 
   render() {
     return (
-      <div >
+      <div>
 
         {<button
           onClick={this.onClickButton}
@@ -58,7 +58,7 @@ class NewCharModal extends Component {
             onClose={this.onCloseModal}>
 
             <div className="character-modal-background">
-              <div className="new-character-modal">
+              <div className="character-modal">
                 <h2>Create A Character</h2>
 
                 <div className="filter-refiner">
@@ -115,62 +115,12 @@ class NewCharModal extends Component {
                   <li>Skills</li>
                 </ol>
 
-
-
-
                 <div className="filter-refiner">
-                  <div> Perception: </div>
-                  <select className="dropdown-filter" onChange={this.handleChange} id="setPerception">
-                    <option> Set Perception </option>
-                    {this.state.perceptionValues.map((item) =>
-                      <option key={item} value={item}>{item}</option>)}
-                  </select>
+                  <div> Perception: {this.state.setPerception} </div>
+                  <input type="range" id="setPerception" min="10" max="30" className="dropdown-filter" onChange={this.handleChange}>
+                  </input>
                 </div>
 
-
-                <div className="filter-refiner">
-                  <div> Class DC: </div>
-                  <select className="dropdown-filter" onChange={this.handleChange} id="setPerception">
-                    <option> Set Class DC </option>
-                    {this.state.dcValues.map((item) =>
-                      <option key={item} value={item}>{item}</option>)}
-                  </select>
-                </div>
-
-                {/* Saving Throws Grid */}
-                {/* <div className="grid-list">
-                    <div className="attribute-text"> Fortitude: </div>
-                    <div className="attribute-text"> Reflex: </div>
-                    <div className="attribute-text"> Will: </div>
-                  </div> */}
-
-
-
-                {/* Abilities Grid */}
-                {/* <div className="grid-list">
-                    <div className="attribute-text"> Strength: </div>
-                    <div className="attribute-text"> Dexterity: </div>
-                    <div className="attribute-text"> Constitution: </div>
-                    <div className="attribute-text"> Intelligence: </div>
-                    <div className="attribute-text"> Wisdom: </div>
-                    <div className="attribute-text"> Charisma: </div>
-                  </div> */}
-
-                {/* Skills Grid */}
-                {/* <div className="grid-list">
-                    <div className="attribute-text">Arcana:</div>
-                    <div className="attribute-text">Crafting:</div>
-                    <div className="attribute-text">Nature:</div>
-                    <div className="attribute-text">Religion:</div>
-                    <div className="attribute-text">Occultism:</div>
-                    <div className="attribute-text">Society:</div>
-                  </div> */}
-                {/* </div> */}
-
-
-
-
-                <div></div>
 
 
                 <button
