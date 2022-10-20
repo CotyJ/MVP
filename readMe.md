@@ -21,7 +21,7 @@ However, there will be no data without first setting up your database.
 
 <code>build</code> - Runs the webpack and transpiles code into bundle.js
 
-<code>build:watch</code>    - Same as 'build' but watches the webpack for changes and rebuilds automatically
+<code>build:watch</code> - Same as 'build' but watches the webpack for changes and rebuilds automatically
 
 <code>kill</code> - Kills the port process in case of ERR PORT IN USE
 

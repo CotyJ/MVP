@@ -48,9 +48,9 @@ h2 {
 #SearchFilter {
   float: left;
   /* display: inline-block; */
-  min-width: 15%;
+  /* min-width: 15%; */
   min-height: 360px;
-  width: 212px;
+  /* width: 212px; */
   height: 90%;
   /* border: 2px solid blue; */
   padding: 10px;
@@ -64,13 +64,14 @@ h2 {
 
 }
 
+
 #Gallery {
   float: left;
   /* display: inline-block; */
   width: fit-content;
   min-width: 40%;
   min-height: 500px;
-  max-width: 60%;
+  max-width: 976px;
   max-height: 600px;
   height: 90%;
   /* border: 2px solid red; */
@@ -133,21 +134,22 @@ h2 {
   width: 100%;
   z-index: 2;
   position: absolute;
-  background-color: #28323f;
+  background: #171a1e;
+
   /* opacity: .8; */
   left: 0;
   top: 0;
 }
 
 .character-modal {
-  position: fixed;
+  /* position: fixed; */
+  --darkreader-inline-bgcolor: #21211e;
   /* opacity: 1; */
+  background-color: #28323f;
+  /* border: 2px solid black; */
   top: 20%;
   left: 25%;
   z-index: 300;
-  background-color: #28323f;
-  --darkreader-inline-bgcolor: #21211e;
-  border: 2px solid black;
   border-radius: 18px;
   padding: 10px;
   align-self: center;
@@ -156,10 +158,16 @@ h2 {
   height: fit-content;
   line-height: 1.5;
   font-weight: bold;
-  background: #171a1e;
   border: 2px solid white;
+  background: #171a1e;
+  overflow-y: auto;
+  background-color: #28323f;
+  background-image: -webkit-linear-gradient(#28323f 0%, #3e5169 60%);
+  background-image: linear-gradient(#28323f 0%, #3e5169 60%);
 
 }
+
+
 
 
 .new-char-button {
@@ -222,7 +230,7 @@ h2 {
 
 .search-button {
   font-size: large;
-  height: 31px;
+  height: 29px;
   margin-left: 2px;
 }
 
@@ -272,6 +280,8 @@ h2 {
   justify-items: center;
   align-items: center;
   text-align: center;
+  background: #262a2e;
+
   border: 2px solid white;
 }
 
@@ -286,13 +296,14 @@ h2 {
   justify-items: center;
   align-items: center;
   text-align: center;
+  background: #262a2e;
+
   border: 2px solid white;
 }
 
-/* .modal-trait {
 
+#title {
+  font-family: 'MedievalSharp';
+  font-size: 48px;
+  text-indent: .5em;
 }
-
-.modal-trait-value {
-
-} */
