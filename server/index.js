@@ -31,12 +31,68 @@ app.get('/api/v1/characters/:id', async (req, res) => {
 // POST a character
 app.post('/api/v1/characters', async (req, res) => {
   const result = await db.query(
-    `INSERT INTO characters(name, class, ancestry, level) VALUES($1, $2, $3, $4) returning *`,
-    [req.body.chosenName, req.body.chosenCla, req.body.chosenAnc, req.body.chosenLvl])
+    `INSERT INTO characters(
+      name,
+      class,
+      ancestry,
+      background,
+      level,
+
+      fortitude,
+      reflex,
+      will,
+
+      strength,
+      dexterity,
+      constitution,
+      intelligence,
+      wisdom,
+      charisma,
+
+      perception,
+      classdc,
+
+      arcana,
+      crafting,
+      nature,
+      occultism,
+      religion,
+      society
+      ) VALUES($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22) returning *`,
+    [
+      req.body.chosenName,
+      req.body.chosenCla,
+      req.body.chosenAnc,
+      req.body.chosenBac,
+      req.body.chosenLvl,
+
+      req.body.setFort,
+      req.body.setRef,
+      req.body.setWill,
+
+      req.body.setStr,
+      req.body.setDex,
+      req.body.setCon,
+      req.body.setInt,
+      req.body.setWis,
+      req.body.setCha,
+
+      req.body.setPerception,
+      req.body.setDC,
+
+      req.body.setArcana,
+      req.body.setCrafting,
+      req.body.setNature,
+      req.body.setReligion,
+      req.body.setOccultism,
+      req.body.setSociety,
+    ])
     .then(res.status(200))
     .catch((err) => console.log(err));
   res.json(result.rows);
 })
+
+
 
 // UPDATE a character
 app.put('/api/v1/characters/:id', async (req, res) => {
@@ -57,5 +113,6 @@ app.delete('/api/v1/characters/:id', async (req, res) => {
     .catch((err) => console.log(err));
 })
 
-app.listen(port, () => {console.log(`-----Listening on port ${port}-----`)
+app.listen(port, () => {
+  console.log(`-----Listening on port ${port}-----`)
 });

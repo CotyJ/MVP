@@ -64,7 +64,6 @@ wisdom INTEGER,
 charisma INTEGER,
 
 perception INTEGER,
-
 classdc INTEGER,
 
 -- Recall Knowledge Skill Scores

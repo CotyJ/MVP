@@ -30,12 +30,92 @@ class App extends React.Component {
   }
 
   addCharacter = (newCharObj) => {
-    const { chosenName, chosenCla, chosenAnc, chosenLvl } = newCharObj;
-    console.log(chosenName, chosenCla, chosenAnc, chosenLvl);
+    const {
+      chosenName,
+      chosenCla,
+      chosenAnc,
+      chosenBac,
+      chosenLvl,
+
+      setFort,
+      setRef,
+      setWill,
+
+      setStr,
+      setDex,
+      setCon,
+      setInt,
+      setWis,
+      setCha,
+
+      setPerception,
+      setDC,
+
+      setArcana,
+      setCrafting,
+      setNature,
+      setReligion,
+      setOccultism,
+      setSociety
+    } = newCharObj;
+    console.log(
+      chosenName,
+      chosenCla,
+      chosenAnc,
+      chosenBac,
+      chosenLvl ,
+
+      setFort,
+      setRef,
+      setWill,
+
+      setStr,
+      setDex,
+      setCon,
+      setInt,
+      setWis,
+      setCha,
+
+      setPerception,
+      setDC,
+
+      setArcana,
+      setCrafting,
+      setNature,
+      setReligion,
+      setOccultism,
+      setSociety
+      );
     const url = '/api/v1/characters';
-    axios.post(url, { chosenName, chosenCla, chosenAnc, chosenLvl })
+    axios.post(url, {
+      chosenName,
+      chosenCla,
+      chosenAnc,
+      chosenBac,
+      chosenLvl ,
+
+      setFort,
+      setRef,
+      setWill,
+
+      setStr,
+      setDex,
+      setCon,
+      setInt,
+      setWis,
+      setCha,
+
+      setPerception,
+      setDC,
+
+      setArcana,
+      setCrafting,
+      setNature,
+      setReligion,
+      setOccultism,
+      setSociety,})
       .then((response) => {
-        console.log("Posted! ", response);
+        console.log("🌟 🌟 🌟 Posted! 🌟 🌟 🌟", response);
         this.getData();
       })
       .catch((err) => console.log("Error Posting! ", err))
