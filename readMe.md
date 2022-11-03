@@ -57,6 +57,17 @@ Home page to see all characters in your DB
 
 ![Home Page](https://github.com/CotyJ/MVP/blob/main/screenshots/MVP_Splash.png?raw=true)
 
+<br />
+<br />
+Character Viewer
+
+![Card](https://github.com/CotyJ/MVP/blob/main/screenshots/MVP_Card.jpg?raw=true)
+<br />
+<br />
+Character Creator
+
+![Creator](https://github.com/CotyJ/MVP/blob/main/screenshots/MVP_Creator.gif?raw=true)
+
 
 
 ## Future Plans
