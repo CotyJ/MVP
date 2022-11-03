@@ -50,6 +50,15 @@ In the Gallery itself, you can click on a character to see more details about th
 
 <br>
 
+
+## Current Features
+
+Home page to see all characters in your DB
+
+![Home Page](//home/coty/Desktop/myCode/MVP/screenshots/MVP_Splash.png?raw=true)
+
+
+
 ## Future Plans
 
 Adding full support for other characteristics
