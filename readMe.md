@@ -55,7 +55,7 @@ In the Gallery itself, you can click on a character to see more details about th
 
 Home page to see all characters in your DB
 
-![Home Page](//home/coty/Desktop/myCode/MVP/screenshots/MVP_Splash.png?raw=true)
+![Home Page](https://github.com/CotyJ/MVP/blob/main/screenshots/MVP_Splash.png?raw=true)
 
 
 
