@@ -115,7 +115,7 @@ class App extends React.Component {
       setOccultism,
       setSociety,})
       .then((response) => {
-        console.log("🌟 🌟 🌟 Posted! 🌟 🌟 🌟", response);
+        console.log("🌟 🌟 🌟 Posted2! 🌟 🌟 🌟", response);
         this.getData();
       })
       .catch((err) => console.log("Error Posting! ", err))
